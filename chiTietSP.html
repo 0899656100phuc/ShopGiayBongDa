@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Javascrip/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Javascrip/cuoiki.js">
+    <link rel="stylesheet" href="css/chiTietSP.css">
+    <link rel="icon" href="favicon/favicon.png">
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <div id="main">
+    <div id="header">
+            
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo3-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active hover-line" aria-current="page" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#banner">Banner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="About.html">Về Phuc Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="service1.html">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Portfolio">Thành tựu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="product.html">Bảnh giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Contact">Liên hệ</a>
+                </li>
+                <ul id="user">
+                  <li>
+                      <a href="">
+                          <i class="ti-user"></i>
+                      </a>
+                      <ul class="subuser">
+                        <li><a href="dangNhap.html">Đăng nhập</a></li>
+                        <li><a href="dangKy.html">Đăng kí</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <li id="shop">
+                  <a href=""><i class="ti-shopping-cart"></i></a>
+                </li>
+              </ul>
+              <div class="boxContainer">
+                <table class="elementContainer">
+                  <tr>
+                    <td>
+                      <input type="text" placeholder="Search" class="search">
+                    </td>
+                    <td>
+                      <a href="#"><i class="ti-search"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>                  
+            </div>
+          </div>
+        </nav>
+  </div>
+  <div style="height: 96px;" class="clear"></div>
+  <div id="space">
+    <span style="color: white;"><a href="index.html">Trang chủ</a>/Chi tiết sản phẩm</span>
+  </div>
+  <div style="height: 40px;" class="clear"></div>
+      <div id="product-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 ">
+                    <img src="img/thumb16.jpg" alt="" class="mb-3 " id="product-img">
+                    <div class="small-thumb">
+                      <img src="img/small1.png" alt="" class="small-img">
+                      <img src="img/small2.png" alt="" class="small-img">
+                      <img src="img/small5.png" alt="" class="small-img">
+                      <img src="img/small3.png" alt="" class="small-img">
+                      <img src="img/small4.png" alt="" class="small-img">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">NIKE MERCURIAL VAPOR 13 PRO TF - AT8004-801 - VÀNG/TRẮNG</h4>
+                    <p>Loại: Giày Cỏ Nhân Tạo (Turf) | Mã SP: ADFY3310TF-39-1-3</p>
+                    <h5 class="card-price">2,380,000<ins>đ</ins></h5>
+                    <p class="mb-2">kích thước</p>
+                    <div class="size mb-3">
+                        <button type="button" class="btn btn-light btn-outline-dark">40</button>
+                        <button type="button" class="btn btn-light btn-outline-dark">40 2/3</button>
+                        <button type="button" class="btn btn-light btn-outline-dark">42</button>
+                        <button type="button" class="btn btn-light btn-outline-dark">44</button>
+                    </div>
+                    <div class="chon-size mb-3">
+                    <p><a href="https://giaycaosmartmen.com/size-giay/">Bảng quy đổi size</a>  | <a href="https://www.giaydayroi.com/blog/goi-y-cach-do-size-giay-nam-chuan-quoc-tes">Hướng dẫn đo size giày</a></p> 
+                    </div>
+                    <p class="mb-2">Số lượng</p>
+                    <div class="quantily mb-3 ">
+                      <span>
+                        <button onclick="tru()" type="button" class="btn btn-outline-secondary"> -</button>
+                        <h2 id="root"></h2>
+                        <button onclick="cong()" type="button" class="btn btn-outline-secondary" >+</button>
+                        <div class="add-thumb ">
+                          <button type="button" class="btn btn-danger ">Thêm vào giỏ hàng  </button>
+                        </div>
+                      </span>
+                      
+                    </div>
+                    <!-- <button type="button" class="btn btn-danger">Mua Ngay</button> -->
+                    <div class="d-grid gap-1 col-7 mb-3">
+                      <button class="btn btn btn-dark" type="button">Mua ngay</button>
+                    </div>
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="img/service/shopping-bag.png" alt="" class="mb-3">
+                        <img src="img/service/exchange.png" alt="" class="mb-3">
+                        <img src="img/service/delivery.png" alt="" class="mb-3">
+                        <img src="img/service/mobile-payment.png" alt="">
+                      </div>
+                      <div class="col-9">
+                        <h6 >ƯU ĐÃI TẶNG KÈM</h6> 
+                        <p>Tặng kèm vớ dệt kim và ba lô chống thấm đựng giày cho mỗi đơn hàng Giày đá banh trên 1 triệu.</p>
+                        <h6>ĐỔI HÀNG DỄ DÀNG</h6>
+                        <p>Hỗ trợ khách hàng đổi size hoặc mẫu trong vòng 7 ngày (sản phẩm chưa qua sử dụng).</p>
+                        <h6>CHÍNH SÁCH GIAO HÀNG</h6>
+                        <p>COD toàn quốc | Freeship toàn quốc khi khách hàng thanh toán chuyển khoản trước.</p>
+                        <h6>THANH TOÁN TIỆN LỢI</h6>
+                        <p>Chấp nhận các loại hình thanh toán bằng thẻ, tiền mặt, chuyển khoản.</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+        <div class="container">
+          <h3>Mô tả</h3>
+          <h6 class="mb-3">NIKE MERCURIAL SUPERFLY 8 KM ACADEMY TF - GIÀY ĐÁ BÓNG SÂN CỎ NHÂN TẠO</h6>
+          <p>Nike Mercurial Superfly 8 KM là phiên bản màu đặc biệt mà Nike dành riêng cho Kylian Mbappé và sẽ được siêu sao người Pháp sử dụng trong các trận thi đấu chính thức. Hình tượng ngọn lửa (flame),
+             biểu tượng chính của bản phối thể hiện sức nóng của cầu thủ đang thuộc biên chế PSG trong tương lai, khi mà anh được hy vọng sẽ là người kế nhiệm "uy tín" cho thời "Hậu Ronaldo - Messi".
+          </p>
+          <h6 class="mb-3">Thông số kỹ thuật:</h6>
+          <p >Mẫu giày đá bóng Mercurial Superfly 8  Academy TF đã được nhà sản xuất thiết kế với độ bè hơn các thế hệ trước.
+             Vì thế, nếu bạn có form chân từ thon tới bè vừa thì vẫn có thể tự tin trải nghiệm mẫu giày đá bóng này! 
+          </p>
+
+          <p>Upper được làm từ da tổng hợp cao cấp sẽ mang lại cảm giác ôm chân vừa vặn và êm ái, cùng với đó là cảm giác bóng tốt nhất khi rê bóng ở tốc độ cao. </p>
+          <p>Phần cổ thun Dynamic Fit sẽ giúp ôm trọn cổ chân của bạn, tạo cảm giác chắc chắn, đồng thời hạn chế tình trạng các hạt cao su rơi vào giày khi chơi bóng.</p>
+          <div class=" text-center mb-3">
+            <button type="button" class="btn btn-outline-dark ">Xem Thêm</button>
+          </div>
+          
+          <div class="details">
+            <p>Gót giày được làm từ vải nhung, không gây ra tình trạng xước gót hay khó chịu khi chơi bóng ở cường độ cao. </p>
+            <p>Phần đế giày được thiết kế với các đinh cao su hình chữ nhật, xếp chồng chéo với nhau giúp đôi giày có thể trụ vững hơn trên mặt sân cỏ nhân tạo.</p>
+            <div class="hinh">
+              <img src="img/small2.png" alt="" width="400px" height="500px">
+            </div>
+            
+            <p>Phân khúc: Pro - Chuyên Nghiệp</p>
+            <p>Form Giày: Thon - Ôm chân phù hợp bàn chân thon và bè vừa</p>
+            <div class="hinh mb-3">
+              <img src="img/small3.png" alt="" width="400px" height="500px">
+            </div>
+            <p >Sản phẩm đang có mặt tại Phúc Store</p>
+            <p>Địa chỉ 1 :Xuân Hiệp , Trà Ôn , Vĩnh Long</p>
+            <p>Địa chỉ 2 :48/31 Lễ Ngã , Phú Trung , Q. Tân Phú</p>
+          </div>
+          
+        </div>
+        
+        <div class="container">
+          <hr>
+          <h3 class="text-center">Sản phẩm liên quan</h3>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col itemBox giayNhanTao 2-3tr NIKE">
+              <div class="card">
+                <div class="card-img ">
+                  <img src="img/thumb1.jpg" class="card-img-top " alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                  <p class="card-price">2,690,000<ins>đ</ins></p>
+                  <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col itemBox giayNhanTao 1-2tr ADIDAS ">
+              <div class="card">
+                <div class="card-img ">
+                  <img src="img/thumb2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text-pricing">ADIDAS MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                  <p class="card-price">1,690,000<ins>đ</ins></p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button>
+
+                </div>
+              </div>
+            </div>
+            <div class="col itemBox giayNhanTao 1-2tr ADIDAS">
+              <div class="card">
+                <div class="card-img ">
+                  <img src="img/thumb3.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text-pricing">ADIDAS MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                  <p class="card-price">1,390,000<ins>đ</ins></p>
+                  <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col itemBox giayFutsal 2-3tr PUMA">
+              <div class="card">
+                <div class="card-img ">
+                  <img src="img/thumb14.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <p class="card-text-pricing">PUMA MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                  <p class="card-price">2,690,000<ins>đ</ins></p>
+                  <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div style="height: 40px;" class="clear"></div>
+      <div id="footer">
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+<!-- Section: Social media -->
+<section
+ class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+>
+ <!-- Left -->
+ <div class="me-5 d-none d-lg-block">
+   <span>Kết nối với chúng tôi trên các mạng xã hội</span>
+ </div>
+ <!-- Left -->
+
+ <!-- Right -->
+ <div>
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #3b5998;"
+     href="#!"
+     role="button"
+     ><i class="ti-facebook"></i
+   ></a>
+
+   <!-- Twitter -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #55acee;"
+     href="#!"
+     role="button"
+     ><i class="ti-twitter-alt"></i
+   ></a>
+
+   <!-- Google -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #dd4b39;"
+     href="#!"
+     role="button"
+     ><i class="ti-google"></i
+   ></a>
+
+   <!-- Instagram -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #ac2bac;"
+     href="#!"
+     role="button"
+     ><i class="ti-instagram"></i
+   ></a>
+
+   <!-- Linkedin -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #0082ca;"
+     href="#!"
+     role="button"
+     ><i class="ti-linkedin"></i
+   ></a>
+   <!-- Github -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #333333;"
+     href="#!"
+     role="button"
+     ><i class="ti-github"></i>
+   </a>
+ </div>
+ <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+ <div class="container text-center text-md-start mt-5">
+   <!-- Grid row -->
+   <div class="row mt-3">
+     <!-- Grid column -->
+     
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         CHÍNH SÁCH
+     </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">Chính sách bảo hành</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách đổi trả</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách thanh toán</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách giao nhận hàng</a>
+     </p>
+     </div>
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         địa chỉ
+       </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">địa chỉ 1: Xuân Hiệp , Trà Ôn , Vĩnh Long</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Địa chỉ 2: 48/31 Lễ Ngã , Phú Trung , Q. Tân Phú</a>
+     </p>
+     
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-lg-4">
+       <h6 class="text-uppercase fw-bold mb-4">Youtube</h6>
+       <div class="embed-responsive embed-responsive-16by9"> 
+         <video width="200" height="170" controls="">
+             <source src="img/video.mp4" type="video/mp4">
+         </video>
+     </div>
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         Instagram
+       </h6>
+       <img src="img/thumb6.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/pf8.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb2.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb4.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+
+
+     </div>
+     <!-- Grid column -->
+   </div>
+   <!-- Grid row -->
+ </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+ © 2021 Copyright:
+ <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="text-decoration: none;"><span style="color: #24aaa3;">PHÚC NGUYỄN STORE</span></a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+     </div>
+          
+  </div>
+        
+    <script>
+      var data=1;
+      document.getElementById("root").innerText=data;
+      function tru(){
+        if(data<=1)
+        {
+          data=1;
+        }
+        else{
+          data=data-1;
+          document.getElementById("root").innerText=data;
+        }
+      }
+      function cong(){
+        data=data+1;
+        document.getElementById("root").innerText=data;
+      }
+    </script>    
+
+    <script>
+      var ProductImg = document.getElementById("product-img");
+      var SmallImg = document.getElementsByClassName("small-img");
+      SmallImg[0].onclick=function()
+      {
+	      ProductImg.src=SmallImg[0].src;
+      }
+      SmallImg[1].onclick=function()
+      {
+	      ProductImg.src=SmallImg[1].src;
+      }
+      SmallImg[2].onclick=function()
+      {
+	      ProductImg.src=SmallImg[2].src;
+      }
+      SmallImg[3].onclick=function()
+      {
+	      ProductImg.src=SmallImg[3].src;
+      }
+      SmallImg[4].onclick=function()
+      {
+	      ProductImg.src=SmallImg[4].src;
+      }
+  
+    </script>
+
+    <script>
+      $(document).ready(function(){
+      $("button").click(function(){
+      $(".details").toggle();
+    });
+  });
+    </script>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-container").delay(500).fadeOut("fast");
+      });
+    </script>
+    <script src="Javascrip/bootstrap.js"></script>
+</body>
+</html>

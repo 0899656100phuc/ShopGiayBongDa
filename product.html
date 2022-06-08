@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuc Store</title>
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Javascrip/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Javascrip/cuoiki.js">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="icon" href="favicon/favicon.png">
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <div id="main">
+    <div id="header">
+            
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo3-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active hover-line" aria-current="page" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#banner">Banner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="About.html">Về Phuc Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="service1.html">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Portfolio">Thành tựu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="product.html">Bảnh giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Contact">Liên hệ</a>
+                </li>
+                <ul id="user">
+                  <li>
+                      <a href="">
+                          <i class="ti-user"></i>
+                      </a>
+                      <ul class="subuser">
+                        <li><a href="dangNhap.html">Đăng nhập</a></li>
+                        <li><a href="dangKy.html">Đăng kí</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <li id="shop">
+                  <a href=""><i class="ti-shopping-cart"></i></a>
+                </li>
+              </ul>
+              <div class="boxContainer">
+                <table class="elementContainer">
+                  <tr>
+                    <td>
+                      <input type="text" placeholder="Search" class="search">
+                    </td>
+                    <td>
+                      <a href="#"><i class="ti-search"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>                  
+            </div>
+          </div>
+        </nav>
+  </div>
+    <div style="height: 96px;" class="clear"></div>
+        <div id="space">
+          <span style="color: white;"><a href="index.html">Trang chủ</a>/Tất cả sản phảm</span>
+        </div>
+        <div style="height: 40px;" class="clear"></div>
+       <div id="product">
+           <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h5>Khoảng giá</h5>
+                      <div class="form-check">
+                        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label list-product" data-filter="all" for="flexRadioDefault1">
+                          Tất cả
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                        <label class="form-check-label list-product" data-filter="duoi1tr" for="flexRadioDefault2">
+                            Dưới 1,000,000₫
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+                        <label class="form-check-label list-product" data-filter="1-2tr" for="flexRadioDefault3">
+                            1,000,000₫- 2,000,000₫
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
+                        <label class="form-check-label list-product" data-filter="2-3tr" for="flexRadioDefault4">
+                            2,000,000₫- 3,000,000₫
+                        </label>
+                      </div>
+
+                      <h5 class="mt-5">Thương hiệu</h5>
+                      <div class="form-check">
+                        <label class="form-check-label list-brand" data-filter="ADIDAS" for="flexCheckDefault1">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                          ADIDAS
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label list-brand" data-filter="PUMA" for="flexCheckChecked2">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
+                          PUMA
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label list-brand" data-filter="NIKE" for="flexCheckDefault3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                          NIKE
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label list-brand" data-filter="KHAC" for="flexCheckDefault4">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                          KHÁC
+                        </label>
+                      </div>
+                </div>
+                <div class="col-9">
+                    <img src="img/col_all_banner.jpg" alt="" width="830px" height="280px">
+                    
+                    
+                </div>
+                <div class="container mb-3">
+                  <h5 class="text-center mb-3 mt-3">Sản phẩm nỗi bật</h5>
+                  <div class="d-grid gap-2 d-md-block  text-center mb-3 ">
+                    <button type="button" class="btn btn-primary btn-lg list" data-filter="all">Tất cả </button>
+                    <button type="button" class="btn btn-secondary btn-lg list active" data-filter="giayNhanTao">Giày cỏ nhân tạo</button>
+                    <button type="button" class="btn btn-secondary btn-lg list" data-filter="giayFutsal">Giày Futsal</button>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col itemBox giayNhanTao 2-3tr NIKE">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb1.jpg" class="card-img-top " alt="...">
+                        </div>
+                        
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayNhanTao 1-2tr ADIDAS ">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">ADIDAS MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">1,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayFutsal 2-3tr NIKE">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thum9.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayNhanTao 1-2tr ADIDAS">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">ADIDAS MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">1,390,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col itemBox giayNhanTao 2-3tr NIKE">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col itemBox giayFutsal 2-3tr ADIDAS">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb10.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">ADIDAS MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayFutsal 2-3tr NIKE">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb11.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayFutsal 2-3tr NIKE">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb13.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayFutsal 2-3tr PUMA">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb14.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">PUMA MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox giayFutsal 2-3tr PUMA">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/thumb15.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">PUMA MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">2,690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox duoi1tr KHAC ">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/product1.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">790,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox duoi1tr giayNhanTao KHAC">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/product2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">NIKE MERCURIAL ZOOM VAPOR 14 PRO TF - CV1001-574 - XANH TÍM/DẠ QUANG.</p>
+                          <p class="card-price">690,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox duoi1tr KHAC">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/product3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">VỚ NGẮN ACTIVITAL FOOT SUPPORTER JAPAN – GSM03-BL – ĐEN</p>
+                          <p class="card-price">380,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col itemBox duoi1tr KHAC">
+                      <div class="card">
+                        <div class="card-img ">
+                          <img src="img/product4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text-pricing">GEL LÀM LẠNH 100ML STARBALM – XANH</p>
+                          <p class="card-price">170,000<ins>đ</ins></p>
+                          <a href="chiTietSP.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Mua ngay </button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+       </div>
+      <div style="height: 20px;" class="clear"></div>
+      <div id="footer">
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+<!-- Section: Social media -->
+<section
+ class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+>
+ <!-- Left -->
+ <div class="me-5 d-none d-lg-block">
+   <span>Kết nối với chúng tôi trên các mạng xã hội</span>
+ </div>
+ <!-- Left -->
+
+ <!-- Right -->
+ <div>
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #3b5998;"
+     href="#!"
+     role="button"
+     ><i class="ti-facebook"></i
+   ></a>
+
+   <!-- Twitter -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #55acee;"
+     href="#!"
+     role="button"
+     ><i class="ti-twitter-alt"></i
+   ></a>
+
+   <!-- Google -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #dd4b39;"
+     href="#!"
+     role="button"
+     ><i class="ti-google"></i
+   ></a>
+
+   <!-- Instagram -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #ac2bac;"
+     href="#!"
+     role="button"
+     ><i class="ti-instagram"></i
+   ></a>
+
+   <!-- Linkedin -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #0082ca;"
+     href="#!"
+     role="button"
+     ><i class="ti-linkedin"></i
+   ></a>
+   <!-- Github -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #333333;"
+     href="#!"
+     role="button"
+     ><i class="ti-github"></i>
+   </a>
+ </div>
+ <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+ <div class="container text-center text-md-start mt-5">
+   <!-- Grid row -->
+   <div class="row mt-3">
+     <!-- Grid column -->
+     
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         CHÍNH SÁCH
+     </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">Chính sách bảo hành</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách đổi trả</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách thanh toán</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách giao nhận hàng</a>
+     </p>
+     </div>
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         địa chỉ
+       </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">địa chỉ 1: Xuân Hiệp , Trà Ôn , Vĩnh Long</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Địa chỉ 2: 48/31 Lễ Ngã , Phú Trung , Q. Tân Phú</a>
+     </p>
+     
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-lg-4">
+       <h6 class="text-uppercase fw-bold mb-4">Youtube</h6>
+       <div class="embed-responsive embed-responsive-16by9"> 
+         <video width="200" height="170" controls="">
+             <source src="img/video.mp4" type="video/mp4">
+         </video>
+     </div>
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         Instagram
+       </h6>
+       <img src="img/thumb6.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/pf8.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb2.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb4.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+
+
+     </div>
+     <!-- Grid column -->
+   </div>
+   <!-- Grid row -->
+ </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+ © 2021 Copyright:
+ <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="text-decoration: none;"><span style="color: #24aaa3;">PHÚC NGUYỄN STORE</span></a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+     </div>
+          
+  </div>
+        
+        
+
+    <script src="Javascrip/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+      $('.list').click(function(){
+          const value =$(this).attr('data-filter');
+          if(value =='all'){
+              $('.itemBox').show('1000');
+          }
+          else{
+              $('.itemBox').not('.'+value).hide('1000');
+              $('.itemBox').filter('.'+value).show('1000');
+          }
+      })
+  })
+      </script>
+      
+      <script>
+        $(document).ready(function(){
+    $('.list-product').click(function(){
+        const value =$(this).attr('data-filter');
+        if(value =='all'){
+            $('.itemBox').show('1000');
+        }
+        else if(value=='duoi1tr'){
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+        }
+        else if(value=='1-2tr'){
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+        }
+        else{
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+
+        }
+    })
+}) 
+      </script>
+
+      <script>
+        $(document).ready(function(){
+    $('.list-brand').click(function(){
+        const value =$(this).attr('data-filter');
+        
+        if(value=='ADIDAS'){
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+            
+        }
+        else if(value=='PUMA' && value=='ADIDAS'){
+           
+            $('.itemBox').filter('.'+value).show();
+        }
+        else if(value=='NIKE' || value=='PUMA' || value=='ADIDAS'){
+            
+            $('.itemBox').filter('.'+value).show('1000');
+           
+        }
+        else if(value=='NIKE' || value=='PUMA' || value=='ADIDAS'||value=='KHAC'){
+            /* $('.itemBox').not('.'+value).hide('1000'); */
+            $('.itemBox').filter('.'+value).show('1000');
+
+        }
+    })
+}) 
+      </script>
+
+<script>
+  $(window).on("load",function(){
+    $(".loader-container").delay(500).fadeOut("fast");
+  });
+</script>
+</body>
+</html>

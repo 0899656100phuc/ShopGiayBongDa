@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuc Store</title>
+  <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="Javascrip/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dangKy.css">
+  
+  <link rel="text/javascript" href="Javascrip/cuoiki.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="icon" href="favicon/favicon.png">
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <div id="main">
+    <div id="header">
+            
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo3-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active hover-line" aria-current="page" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#banner">Banner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="About.html">Về Phuc Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="service1.html">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Portfolio">Thành tựu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="product.html">Bảnh giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hover-line navigation-link" href="#Contact">Liên hệ</a>
+                </li>
+                <ul id="user">
+                  <li>
+                      <a href="">
+                          <i class="ti-user"></i>
+                      </a>
+                      <ul class="subuser">
+                        <li><a href="dangNhap.html">Đăng nhập</a></li>
+                        <li><a href="dangKy.html">Đăng kí</a></li>
+                      </ul>
+                  </li>
+                </ul>
+                <li id="shop">
+                  <a href=""><i class="ti-shopping-cart"></i></a>
+                </li>
+              </ul>
+              <div class="boxContainer">
+                <table class="elementContainer">
+                  <tr>
+                    <td>
+                      <input type="text" placeholder="Search" class="search">
+                    </td>
+                    <td>
+                      <a href="#"><i class="ti-search"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>                  
+            </div>
+          </div>
+        </nav>
+  </div>
+  <div style="height: 96px;" class="clear"></div>
+        <div id="space">
+          <span style="color: white;"><a href="index.html">Trang chủ</a>/Tài khoản</span>
+        </div>
+        <div style="height: 40px;" class="clear"></div>
+        <div class="dangky d-flex align-items-center">
+            <div class="container">
+            
+                <div class="header-form">
+                    <h2 class="text-center">Tạo tài khoản</h2>
+                 </div>
+                 <form method="get" id="Form" class="form">
+                    <div class="form-control">
+                       <label for="username">Tên tài khoản</label>
+                       <input name="username" type="text" placeholder="Điền tên vào đây" id="username" >
+                       
+                       
+                    </div>
+                    <div class="form-control">
+                       <label for="email">Email</label>
+                       <input name="email" type="email" placeholder="Tên địa chỉ Emai@.com" id="email" />
+                       
+                       
+                    </div>
+                    <div class="form-control">
+                       <label for="Password">Password</label>
+                       <input name="Password" type="password" placeholder="Password" id="password"/>
+                       
+                       
+                    </div>
+                    <div class="form-control">
+                       <label for="re-password">Confirm Password</label>
+                       <input name="re-password"  type="password"  placeholder="nhập lại Password " />
+                       
+                       
+                    </div>
+                    
+                    <button>Đăng ký</button>
+                    <div class="bottom-form mt-4">
+                       <p >Bạn đã có tài khoản? <a href="dangNhap.html" ><strong>đăng nhập</strong></a></p>
+                    </div>
+                    
+                 </form>
+            
+            
+        </div>
+        </div>
+
+      <div style="height: 20px;" class="clear"></div>
+      <div id="footer">
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+<!-- Section: Social media -->
+<section
+ class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+>
+ <!-- Left -->
+ <div class="me-5 d-none d-lg-block">
+   <span>Kết nối với chúng tôi trên các mạng xã hội</span>
+ </div>
+ <!-- Left -->
+
+ <!-- Right -->
+ <div>
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #3b5998;"
+     href="#!"
+     role="button"
+     ><i class="ti-facebook"></i
+   ></a>
+
+   <!-- Twitter -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #55acee;"
+     href="#!"
+     role="button"
+     ><i class="ti-twitter-alt"></i
+   ></a>
+
+   <!-- Google -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #dd4b39;"
+     href="#!"
+     role="button"
+     ><i class="ti-google"></i
+   ></a>
+
+   <!-- Instagram -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #ac2bac;"
+     href="#!"
+     role="button"
+     ><i class="ti-instagram"></i
+   ></a>
+
+   <!-- Linkedin -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #0082ca;"
+     href="#!"
+     role="button"
+     ><i class="ti-linkedin"></i
+   ></a>
+   <!-- Github -->
+   <a
+     class="btn btn-primary btn-floating m-1"
+     style="background-color: #333333;"
+     href="#!"
+     role="button"
+     ><i class="ti-github"></i>
+   </a>
+ </div>
+ <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+ <div class="container text-center text-md-start mt-5">
+   <!-- Grid row -->
+   <div class="row mt-3">
+     <!-- Grid column -->
+     
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         CHÍNH SÁCH
+     </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">Chính sách bảo hành</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách đổi trả</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách thanh toán</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Chính sách giao nhận hàng</a>
+     </p>
+     </div>
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         địa chỉ
+       </h6>
+     <p>
+       <a href="#!" class="text-reset"  style="text-decoration: none;">địa chỉ 1: Xuân Hiệp , Trà Ôn , Vĩnh Long</a>
+     </p>
+     <p>
+       <a href="#!" class="text-reset" style="text-decoration: none;">Địa chỉ 2: 48/31 Lễ Ngã , Phú Trung , Q. Tân Phú</a>
+     </p>
+     
+     </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+    <div class="col-lg-4">
+      <h6 class="text-uppercase fw-bold mb-4">Youtube</h6>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video width="200" height="170" controls="">
+          <source src="img/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+       <!-- Links -->
+       <h6 class="text-uppercase fw-bold mb-4">
+         Instagram
+       </h6>
+       <img src="img/thumb6.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/pf8.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb2.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+       <img src="img/thumb4.jpg" class="rounded float-left" alt="..." width="100px" height="100px" style="padding: 5px;">
+
+
+     </div>
+     <!-- Grid column -->
+   </div>
+   <!-- Grid row -->
+ </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+ © 2021 Copyright:
+ <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="text-decoration: none;"><span style="color: #24aaa3;">PHÚC NGUYỄN STORE</span></a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+     </div>
+          
+  </div>
+        
+  <script>
+    $(document).ready(function(){
+ $("#Form").validate({
+     rules:{
+         "username":{
+             required:true
+         },
+         "email":{
+             required:true,
+            email:true
+         },
+        "Password":{
+          required:true,
+          minlength:6
+        },
+        "re-password":{
+          equalTo: "#password"
+        }
+     },
+   
+     messages:{
+         "username":{
+             required:"bạn chưa nhập tên !"
+         },
+         "email":{
+             required: "Vui lòng nhập Email ",
+     email : "Email chưa đúng định dạng"
+         },
+      "re-password":{
+   equalTo: "password nhập không khớp !"
+      },
+      "Password":{
+         required:"Bạn phải nhập password",
+         minlength:"password phải tối thiểu 6 kí tự"
+      }
+     },
+ 
+ submitHandler: function(form) {
+ alert("đăng ký thành công");
+ validator.resetForm();
+ 
+}
+ })
+})
+ </script>  
+ <script>
+  $(window).on("load",function(){
+    $(".loader-container").delay(500).fadeOut("fast");
+  });
+</script>  
+
+</body>
+<script src="Javascrip/bootstrap.js"></script>
+</html>
